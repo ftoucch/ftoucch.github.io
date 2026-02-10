@@ -31,6 +31,11 @@ body {
     animation: pulse 1.5s infinite;
     cursor: pointer;
 }
+.valentine-content {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
 
 #letter-container{
     display: none;
@@ -63,7 +68,7 @@ body {
     background-position: center;
     border-radius: 12px;
     gap: 1px;
-    padding-top: 180px;
+    padding-top: 20px;
 
     transform: scale(1.2);
     opacity: 0;
