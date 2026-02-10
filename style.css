@@ -34,6 +34,7 @@ body {
 .valentine-content {
     display: flex;
     flex-direction: column;
+    gap:2rem;
     align-items: center;
     padding-top: 20px;
     text-align: center;
