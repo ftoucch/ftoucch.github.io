@@ -80,7 +80,7 @@ yesBtn.addEventListener("click", () => {
 
     emailjs.send(
         "service_6d3jsfa",     // <-- your EmailJS service ID
-        "template_io6i4vs",    // template id
+        "template_izl2npl",    // template id
         templateParams
     )
     .then(function(response) {
