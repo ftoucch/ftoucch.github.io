@@ -69,4 +69,23 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+
+    // EMAILJS SEND
+    const templateParams = {
+        to_name: "My cutie",
+        to_email: "ftoucch@gmail.com",
+        message: "You said yes 🎉",
+        from_name: "Faith"
+    };
+
+    emailjs.send(
+        "service_6d3jsfa",     // <-- your EmailJS service ID
+        "template_io6i4vs",    // template id
+        templateParams
+    )
+    .then(function(response) {
+        console.log("SUCCESS!", response.status, response.text);
+    }, function(error) {
+        console.log("FAILED...", error);
+    });
 });
