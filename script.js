@@ -73,7 +73,7 @@ yesBtn.addEventListener("click", () => {
     // EMAILJS SEND
     const templateParams = {
         to_name: "My cutie",
-        to_email: "ftoucch@gmail.com",
+        to_email: "ftoucch@gmail.com, grelixir@gmail.com",
         message: "You said yes 🎉",
         from_name: "Faith"
     };
