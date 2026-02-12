@@ -80,7 +80,7 @@ yesBtn.addEventListener("click", () => {
 
     const templateParams2 = {
         to_name: "My cutie",
-        to_email: "grelixir@gmail.com",
+        to_email: "minadigunawardena04@gmail.com",
         message: "You said yes 🎉",
         from_name: "Faith"
     };
