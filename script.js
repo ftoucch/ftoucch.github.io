@@ -73,7 +73,14 @@ yesBtn.addEventListener("click", () => {
     // EMAILJS SEND
     const templateParams = {
         to_name: "My cutie",
-        to_email: "ftoucch@gmail.com, grelixir@gmail.com",
+        to_email: "ftoucch@gmail.com",
+        message: "You said yes 🎉",
+        from_name: "Faith"
+    };
+
+    const templateParams2 = {
+        to_name: "My cutie",
+        to_email: "grelixir@gmail.com",
         message: "You said yes 🎉",
         from_name: "Faith"
     };
@@ -83,6 +90,13 @@ yesBtn.addEventListener("click", () => {
         "template_izl2npl",    // template id
         templateParams
     )
+
+    emailjs.send(
+        "service_6d3jsfa",     // <-- your EmailJS service ID
+        "template_izl2npl",    // template id
+        templateParams2
+    )
+
     .then(function(response) {
         console.log("SUCCESS!", response.status, response.text);
     }, function(error) {
